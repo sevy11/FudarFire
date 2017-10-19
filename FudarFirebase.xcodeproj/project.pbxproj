@@ -1,0 +1,686 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26ABF20F1F990222005E6140 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABF20E1F990222005E6140 /* AppDelegate.swift */; };
+		26ABF2111F990222005E6140 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABF2101F990222005E6140 /* ViewController.swift */; };
+		26ABF2141F990222005E6140 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26ABF2121F990222005E6140 /* Main.storyboard */; };
+		26ABF2161F990222005E6140 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26ABF2151F990222005E6140 /* Assets.xcassets */; };
+		26ABF2191F990222005E6140 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26ABF2171F990222005E6140 /* LaunchScreen.storyboard */; };
+		26ABF2241F990222005E6140 /* FudarFirebaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABF2231F990222005E6140 /* FudarFirebaseTests.swift */; };
+		26ABF22F1F990223005E6140 /* FudarFirebaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABF22E1F990223005E6140 /* FudarFirebaseUITests.swift */; };
+		26ABF23D1F9902EB005E6140 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABF23C1F9902EB005E6140 /* LocationManager.swift */; };
+		26ABF23F1F990315005E6140 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABF23E1F990315005E6140 /* AuthenticationManager.swift */; };
+		26ABF2411F990943005E6140 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABF2401F990943005E6140 /* FirebaseManager.swift */; };
+		26ABF2451F99187E005E6140 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26ABF21A1F990222005E6140 /* Info.plist */; };
+		26ABF2461F991881005E6140 /* GoogleService-Info (2).plist in Resources */ = {isa = PBXBuildFile; fileRef = 26ABF2421F991636005E6140 /* GoogleService-Info (2).plist */; };
+		8A16DB2FE41984A6F08DE352 /* Pods_FudarFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 760F9C77E8D3C24845AB59E3 /* Pods_FudarFirebase.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		26ABF2201F990222005E6140 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26ABF2031F990222005E6140 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26ABF20A1F990222005E6140;
+			remoteInfo = FudarFirebase;
+		};
+		26ABF22B1F990223005E6140 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26ABF2031F990222005E6140 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26ABF20A1F990222005E6140;
+			remoteInfo = FudarFirebase;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		26ABF20B1F990222005E6140 /* FudarFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FudarFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26ABF20E1F990222005E6140 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		26ABF2101F990222005E6140 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		26ABF2131F990222005E6140 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		26ABF2151F990222005E6140 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		26ABF2181F990222005E6140 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		26ABF21A1F990222005E6140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26ABF21F1F990222005E6140 /* FudarFirebaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FudarFirebaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		26ABF2231F990222005E6140 /* FudarFirebaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FudarFirebaseTests.swift; sourceTree = "<group>"; };
+		26ABF2251F990222005E6140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26ABF22A1F990223005E6140 /* FudarFirebaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FudarFirebaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		26ABF22E1F990223005E6140 /* FudarFirebaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FudarFirebaseUITests.swift; sourceTree = "<group>"; };
+		26ABF2301F990223005E6140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26ABF23C1F9902EB005E6140 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		26ABF23E1F990315005E6140 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		26ABF2401F990943005E6140 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		26ABF2421F991636005E6140 /* GoogleService-Info (2).plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (2).plist"; sourceTree = "<group>"; };
+		392108086FCBB9F7ED99DE76 /* Pods-FudarFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FudarFirebase.release.xcconfig"; path = "Pods/Target Support Files/Pods-FudarFirebase/Pods-FudarFirebase.release.xcconfig"; sourceTree = "<group>"; };
+		760F9C77E8D3C24845AB59E3 /* Pods_FudarFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FudarFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4BA12671C2CBC40A469F2B5 /* Pods-FudarFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FudarFirebase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FudarFirebase/Pods-FudarFirebase.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26ABF2081F990222005E6140 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A16DB2FE41984A6F08DE352 /* Pods_FudarFirebase.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26ABF21C1F990222005E6140 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26ABF2271F990223005E6140 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0463A2818D4B49CEE3F69495 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4BA12671C2CBC40A469F2B5 /* Pods-FudarFirebase.debug.xcconfig */,
+				392108086FCBB9F7ED99DE76 /* Pods-FudarFirebase.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		26ABF2021F990222005E6140 = {
+			isa = PBXGroup;
+			children = (
+				26ABF20D1F990222005E6140 /* FudarFirebase */,
+				26ABF2221F990222005E6140 /* FudarFirebaseTests */,
+				26ABF22D1F990223005E6140 /* FudarFirebaseUITests */,
+				26ABF20C1F990222005E6140 /* Products */,
+				0463A2818D4B49CEE3F69495 /* Pods */,
+				FB450EEC577771F516A03883 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		26ABF20C1F990222005E6140 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26ABF20B1F990222005E6140 /* FudarFirebase.app */,
+				26ABF21F1F990222005E6140 /* FudarFirebaseTests.xctest */,
+				26ABF22A1F990223005E6140 /* FudarFirebaseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26ABF20D1F990222005E6140 /* FudarFirebase */ = {
+			isa = PBXGroup;
+			children = (
+				26ABF2121F990222005E6140 /* Main.storyboard */,
+				26ABF20E1F990222005E6140 /* AppDelegate.swift */,
+				26ABF2101F990222005E6140 /* ViewController.swift */,
+				26ABF2441F991712005E6140 /* Managers */,
+				26ABF2431F991707005E6140 /* Supporting */,
+			);
+			path = FudarFirebase;
+			sourceTree = "<group>";
+		};
+		26ABF2221F990222005E6140 /* FudarFirebaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				26ABF2231F990222005E6140 /* FudarFirebaseTests.swift */,
+				26ABF2251F990222005E6140 /* Info.plist */,
+			);
+			path = FudarFirebaseTests;
+			sourceTree = "<group>";
+		};
+		26ABF22D1F990223005E6140 /* FudarFirebaseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				26ABF22E1F990223005E6140 /* FudarFirebaseUITests.swift */,
+				26ABF2301F990223005E6140 /* Info.plist */,
+			);
+			path = FudarFirebaseUITests;
+			sourceTree = "<group>";
+		};
+		26ABF2431F991707005E6140 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				26ABF2151F990222005E6140 /* Assets.xcassets */,
+				26ABF2171F990222005E6140 /* LaunchScreen.storyboard */,
+				26ABF21A1F990222005E6140 /* Info.plist */,
+				26ABF2421F991636005E6140 /* GoogleService-Info (2).plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		26ABF2441F991712005E6140 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				26ABF23C1F9902EB005E6140 /* LocationManager.swift */,
+				26ABF23E1F990315005E6140 /* AuthenticationManager.swift */,
+				26ABF2401F990943005E6140 /* FirebaseManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		FB450EEC577771F516A03883 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				760F9C77E8D3C24845AB59E3 /* Pods_FudarFirebase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26ABF20A1F990222005E6140 /* FudarFirebase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26ABF2331F990223005E6140 /* Build configuration list for PBXNativeTarget "FudarFirebase" */;
+			buildPhases = (
+				F05388B58EFDE1847AFF39D4 /* [CP] Check Pods Manifest.lock */,
+				26ABF2071F990222005E6140 /* Sources */,
+				26ABF2081F990222005E6140 /* Frameworks */,
+				26ABF2091F990222005E6140 /* Resources */,
+				5787804BDBA49C6C915418E0 /* [CP] Embed Pods Frameworks */,
+				FC13F3AD6ECD1EECD5AC26B7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FudarFirebase;
+			productName = FudarFirebase;
+			productReference = 26ABF20B1F990222005E6140 /* FudarFirebase.app */;
+			productType = "com.apple.product-type.application";
+		};
+		26ABF21E1F990222005E6140 /* FudarFirebaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26ABF2361F990223005E6140 /* Build configuration list for PBXNativeTarget "FudarFirebaseTests" */;
+			buildPhases = (
+				26ABF21B1F990222005E6140 /* Sources */,
+				26ABF21C1F990222005E6140 /* Frameworks */,
+				26ABF21D1F990222005E6140 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26ABF2211F990222005E6140 /* PBXTargetDependency */,
+			);
+			name = FudarFirebaseTests;
+			productName = FudarFirebaseTests;
+			productReference = 26ABF21F1F990222005E6140 /* FudarFirebaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		26ABF2291F990223005E6140 /* FudarFirebaseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26ABF2391F990223005E6140 /* Build configuration list for PBXNativeTarget "FudarFirebaseUITests" */;
+			buildPhases = (
+				26ABF2261F990223005E6140 /* Sources */,
+				26ABF2271F990223005E6140 /* Frameworks */,
+				26ABF2281F990223005E6140 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26ABF22C1F990223005E6140 /* PBXTargetDependency */,
+			);
+			name = FudarFirebaseUITests;
+			productName = FudarFirebaseUITests;
+			productReference = 26ABF22A1F990223005E6140 /* FudarFirebaseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26ABF2031F990222005E6140 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Michael Sevy";
+				TargetAttributes = {
+					26ABF20A1F990222005E6140 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					26ABF21E1F990222005E6140 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 26ABF20A1F990222005E6140;
+					};
+					26ABF2291F990223005E6140 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 26ABF20A1F990222005E6140;
+					};
+				};
+			};
+			buildConfigurationList = 26ABF2061F990222005E6140 /* Build configuration list for PBXProject "FudarFirebase" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 26ABF2021F990222005E6140;
+			productRefGroup = 26ABF20C1F990222005E6140 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26ABF20A1F990222005E6140 /* FudarFirebase */,
+				26ABF21E1F990222005E6140 /* FudarFirebaseTests */,
+				26ABF2291F990223005E6140 /* FudarFirebaseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		26ABF2091F990222005E6140 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26ABF2451F99187E005E6140 /* Info.plist in Resources */,
+				26ABF2191F990222005E6140 /* LaunchScreen.storyboard in Resources */,
+				26ABF2161F990222005E6140 /* Assets.xcassets in Resources */,
+				26ABF2461F991881005E6140 /* GoogleService-Info (2).plist in Resources */,
+				26ABF2141F990222005E6140 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26ABF21D1F990222005E6140 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26ABF2281F990223005E6140 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5787804BDBA49C6C915418E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FudarFirebase/Pods-FudarFirebase-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FudarFirebase/Pods-FudarFirebase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F05388B58EFDE1847AFF39D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FudarFirebase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC13F3AD6ECD1EECD5AC26B7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FudarFirebase/Pods-FudarFirebase-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26ABF2071F990222005E6140 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26ABF2111F990222005E6140 /* ViewController.swift in Sources */,
+				26ABF23F1F990315005E6140 /* AuthenticationManager.swift in Sources */,
+				26ABF2411F990943005E6140 /* FirebaseManager.swift in Sources */,
+				26ABF20F1F990222005E6140 /* AppDelegate.swift in Sources */,
+				26ABF23D1F9902EB005E6140 /* LocationManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26ABF21B1F990222005E6140 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26ABF2241F990222005E6140 /* FudarFirebaseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26ABF2261F990223005E6140 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26ABF22F1F990223005E6140 /* FudarFirebaseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		26ABF2211F990222005E6140 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26ABF20A1F990222005E6140 /* FudarFirebase */;
+			targetProxy = 26ABF2201F990222005E6140 /* PBXContainerItemProxy */;
+		};
+		26ABF22C1F990223005E6140 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26ABF20A1F990222005E6140 /* FudarFirebase */;
+			targetProxy = 26ABF22B1F990223005E6140 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		26ABF2121F990222005E6140 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26ABF2131F990222005E6140 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		26ABF2171F990222005E6140 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26ABF2181F990222005E6140 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		26ABF2311F990223005E6140 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		26ABF2321F990223005E6140 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		26ABF2341F990223005E6140 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4BA12671C2CBC40A469F2B5 /* Pods-FudarFirebase.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TKVBVK4237;
+				INFOPLIST_FILE = FudarFirebase/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sevy.FudarFirebase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		26ABF2351F990223005E6140 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 392108086FCBB9F7ED99DE76 /* Pods-FudarFirebase.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TKVBVK4237;
+				INFOPLIST_FILE = FudarFirebase/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sevy.FudarFirebase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		26ABF2371F990223005E6140 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TKVBVK4237;
+				INFOPLIST_FILE = FudarFirebaseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sevy.FudarFirebaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FudarFirebase.app/FudarFirebase";
+			};
+			name = Debug;
+		};
+		26ABF2381F990223005E6140 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TKVBVK4237;
+				INFOPLIST_FILE = FudarFirebaseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sevy.FudarFirebaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FudarFirebase.app/FudarFirebase";
+			};
+			name = Release;
+		};
+		26ABF23A1F990223005E6140 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TKVBVK4237;
+				INFOPLIST_FILE = FudarFirebaseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sevy.FudarFirebaseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FudarFirebase;
+			};
+			name = Debug;
+		};
+		26ABF23B1F990223005E6140 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TKVBVK4237;
+				INFOPLIST_FILE = FudarFirebaseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sevy.FudarFirebaseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FudarFirebase;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26ABF2061F990222005E6140 /* Build configuration list for PBXProject "FudarFirebase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26ABF2311F990223005E6140 /* Debug */,
+				26ABF2321F990223005E6140 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26ABF2331F990223005E6140 /* Build configuration list for PBXNativeTarget "FudarFirebase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26ABF2341F990223005E6140 /* Debug */,
+				26ABF2351F990223005E6140 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26ABF2361F990223005E6140 /* Build configuration list for PBXNativeTarget "FudarFirebaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26ABF2371F990223005E6140 /* Debug */,
+				26ABF2381F990223005E6140 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26ABF2391F990223005E6140 /* Build configuration list for PBXNativeTarget "FudarFirebaseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26ABF23A1F990223005E6140 /* Debug */,
+				26ABF23B1F990223005E6140 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 26ABF2031F990222005E6140 /* Project object */;
+}
